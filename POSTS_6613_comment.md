@@ -4,7 +4,7 @@ ROCm/composable_kernel#3759, where you asked whether any of the three had been m
 than "unsupported", and one of my first-pass conclusions was wrong and is corrected below.
 
 Sources, scripts, raw logs, the extracted code objects and the rocprofv3 CSVs are at
-**REPO_URL @ REPO_COMMIT**; each table names the log file it comes from. Where something is
+**https://github.com/doplxyz/rdna4-gfx1201-tooling-verification @ `34e1359`**; each table names the log file it comes from. Where something is
 inference rather than measurement I say so explicitly, and I have tried to keep the two separated
 throughout.
 
