@@ -1,0 +1,61 @@
+compiler: AMD clang version 23.0.0git (https://github.com/ROCm/llvm-project.git 46fcb339fb61119b337f973c7ca9e710a319fdd0+PATCHED:440716f8b87be9d8e20ed910e10e5b6d14d57cf6)
+targets enumerated by: amdclang++ -target amdgcn-amd-amdhsa -mcpu=help
+target               xnack+     plain+ASAN diagnostic
+gfx10-1-generic      ACCEPTED   warn:ignored
+gfx10-3-generic      invalid-tid warn:ignored
+gfx1010              ACCEPTED   warn:ignored
+gfx1011              ACCEPTED   warn:ignored
+gfx1012              ACCEPTED   warn:ignored
+gfx1013              ACCEPTED   warn:ignored
+gfx1030              invalid-tid warn:ignored
+gfx1031              invalid-tid warn:ignored
+gfx1032              invalid-tid warn:ignored
+gfx1033              invalid-tid warn:ignored
+gfx1034              invalid-tid warn:ignored
+gfx1035              invalid-tid warn:ignored
+gfx1036              invalid-tid warn:ignored
+gfx11-generic        invalid-tid warn:ignored
+gfx1100              invalid-tid warn:ignored
+gfx1101              invalid-tid warn:ignored
+gfx1102              invalid-tid warn:ignored
+gfx1103              invalid-tid warn:ignored
+gfx1150              invalid-tid warn:ignored
+gfx1151              invalid-tid warn:ignored
+gfx1152              invalid-tid warn:ignored
+gfx1153              invalid-tid warn:ignored
+gfx1170              invalid-tid warn:ignored
+gfx1171              invalid-tid warn:ignored
+gfx1172              invalid-tid warn:ignored
+gfx12-5-generic      invalid-tid warn:ignored rc=1
+gfx12-generic        invalid-tid warn:ignored
+gfx1200              invalid-tid warn:ignored
+gfx1201              invalid-tid warn:ignored
+gfx1250              invalid-tid 
+gfx1251              invalid-tid 
+gfx1310              invalid-tid warn:ignored rc=1
+gfx600               invalid-tid warn:ignored
+gfx601               invalid-tid warn:ignored
+gfx602               invalid-tid warn:ignored
+gfx700               invalid-tid warn:ignored
+gfx701               invalid-tid warn:ignored
+gfx702               invalid-tid warn:ignored
+gfx703               invalid-tid warn:ignored
+gfx704               invalid-tid warn:ignored
+gfx705               invalid-tid warn:ignored
+gfx801               ACCEPTED   warn:ignored
+gfx802               invalid-tid warn:ignored
+gfx803               invalid-tid warn:ignored
+gfx805               invalid-tid warn:ignored
+gfx810               ACCEPTED   warn:ignored
+gfx9-4-generic       ACCEPTED   warn:ignored
+gfx9-generic         ACCEPTED   warn:ignored
+gfx900               ACCEPTED   warn:ignored
+gfx902               ACCEPTED   warn:ignored
+gfx904               ACCEPTED   warn:ignored
+gfx906               ACCEPTED   warn:ignored
+gfx908               ACCEPTED   warn:ignored
+gfx909               ACCEPTED   warn:ignored
+gfx90a               ACCEPTED   warn:ignored
+gfx90c               ACCEPTED   warn:ignored
+gfx942               ACCEPTED   warn:ignored
+gfx950               ACCEPTED   warn:ignored

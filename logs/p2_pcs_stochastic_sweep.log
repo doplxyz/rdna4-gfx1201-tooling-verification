@@ -1,0 +1,28 @@
+### CONTROL: host_trap actually collects samples
+find: '/tmp/pcs/o_512': No such file or directory
+bash: line 6: $f: ambiguous redirect
+  interval=512 rows=-1  distinct_pc=0
+find: '/tmp/pcs/o_1000': No such file or directory
+bash: line 6: $f: ambiguous redirect
+  interval=1000 rows=-1  distinct_pc=0
+find: '/tmp/pcs/o_10000': No such file or directory
+bash: line 6: $f: ambiguous redirect
+  interval=10000 rows=-1  distinct_pc=0
+find: '/tmp/pcs/o_512': No such file or directory
+  header: 
+find: '/tmp/pcs/o_512': No such file or directory
+  sample: 
+
+### stochastic: every unit / interval combination
+  unit=time         interval=512    rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=time         interval=1000   rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=time         interval=32     rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=time         interval=65504  rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=cycles       interval=512    rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=cycles       interval=1000   rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=cycles       interval=32     rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=cycles       interval=65504  rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=instructions interval=512    rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=instructions interval=1000   rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=instructions interval=32     rc=1   Given PC sampling configuration is not supported on any of the agents
+  unit=instructions interval=65504  rc=1   Given PC sampling configuration is not supported on any of the agents

@@ -1,0 +1,25 @@
+=== BEFORE 2026-08-19T00:12:32+09:00
+comfy-rocm7140 Up 39 hours (healthy)
+torch-build Up 16 hours
+llama-rocm-b10331 Exited (137) 9 days ago
+llama-vulkan-b10331 Exited (137) 9 days ago
+comfy-rocm724 Exited (0) 7 days ago
+llama-brain Exited (137) 9 days ago
+openwebui-frontend Up 3 days (healthy)
+searxng-frontend Up 3 days
+--- systemd
+active
+inactive
+--- llm
+LLM稼働中
+--- vram
+
+
+============================ ROCm System Management Interface ============================
+=================================== Current Memory Use ===================================
+GPU[0]		: GPU Memory Allocated (VRAM%): 68
+GPU[0]		: GPU Memory Read/Write Activity (%): 1
+GPU[0]		: Memory Activity: N/A
+GPU[0]		: Avg. Memory Bandwidth: 0
+==========================================================================================
+================================== End of ROCm SMI Log ===================================

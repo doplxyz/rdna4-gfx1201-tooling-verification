@@ -1,0 +1,24 @@
+=== host_trap unit=time interval=512
+E0818 15:17:23.464941      10 output_stream.cpp:111] Opened result file: /tmp/pcs/o_512/3c7f2823e6b2/10_pc_sampling_host_trap.csv
+E0818 15:17:23.517702      10 output_stream.cpp:111] Opened result file: /tmp/pcs/o_512/3c7f2823e6b2/10_agent_info.csv
+mode=0 buffer_bytes=268435456 iters=200 requested_bytes=53687091200 (51200.00 MiB)
+rc=0  files:
+    /tmp/pcs/o_512/3c7f2823e6b2/10_agent_info.csv
+    /tmp/pcs/o_512/3c7f2823e6b2/10_pc_sampling_host_trap.csv
+=== host_trap unit=time interval=1000
+E0818 15:17:23.897343      22 output_stream.cpp:111] Opened result file: /tmp/pcs/o_1000/3c7f2823e6b2/22_pc_sampling_host_trap.csv
+E0818 15:17:23.927430      22 output_stream.cpp:111] Opened result file: /tmp/pcs/o_1000/3c7f2823e6b2/22_agent_info.csv
+mode=0 buffer_bytes=268435456 iters=200 requested_bytes=53687091200 (51200.00 MiB)
+rc=0  files:
+    /tmp/pcs/o_1000/3c7f2823e6b2/22_pc_sampling_host_trap.csv
+    /tmp/pcs/o_1000/3c7f2823e6b2/22_agent_info.csv
+=== host_trap unit=time interval=10000
+E0818 15:17:24.301240      34 output_stream.cpp:111] Opened result file: /tmp/pcs/o_10000/3c7f2823e6b2/34_pc_sampling_host_trap.csv
+E0818 15:17:24.308451      34 output_stream.cpp:111] Opened result file: /tmp/pcs/o_10000/3c7f2823e6b2/34_agent_info.csv
+mode=0 buffer_bytes=268435456 iters=200 requested_bytes=53687091200 (51200.00 MiB)
+rc=0  files:
+    /tmp/pcs/o_10000/3c7f2823e6b2/34_agent_info.csv
+    /tmp/pcs/o_10000/3c7f2823e6b2/34_pc_sampling_host_trap.csv
+=== host_trap unit=time interval=1000000
+mode=0 buffer_bytes=268435456 iters=200 requested_bytes=53687091200 (51200.00 MiB)
+rc=0  files:

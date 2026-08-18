@@ -1,0 +1,13 @@
+### CONTROL: host_trap on the same binary, same run length
+  interval=512      rc=0 rows=21601 distinct_pc=137
+  interval=1000     rc=0 rows=11252 distinct_pc=83
+  interval=10000    rc=0 rows=1091 distinct_pc=18
+  interval=1000000  rc=0  NO OUTPUT FILE (silently produced nothing)
+  csv header: "Sample_Timestamp","Exec_Mask","Dispatch_Id","Instruction","Instruction_Comment","Correlation_Id"
+  first row : 310546485691341,4294967295,2,"v_add_f32_e32 v0, v0, v2","",2
+interval=512 rows=21601 distinct_instructions=181 distinct_dispatch=181
+interval=1000 rows=11252 distinct_instructions=95 distinct_dispatch=95
+interval=10000 rows=1091 distinct_instructions=10 distinct_dispatch=10
+interval=    512 samples= 21601 distinct_instructions=  24 dispatches= 181 top=[(20750, 'v_add_f32_e32 v0, v0, v2'), (248, 'v_mad_co_u64_u32 v[0:1], null, s4, ttm'), (100, 'v_add_co_u32 v0, vcc_lo, s0, v0')]
+interval=   1000 samples= 11252 distinct_instructions=  23 dispatches=  95 top=[(10828, 'v_add_f32_e32 v0, v0, v2'), (70, 'v_mad_co_u64_u32 v[0:1], null, s4, ttm'), (70, 'v_add_co_u32 v0, vcc_lo, s0, v0')]
+interval=  10000 samples=  1091 distinct_instructions=  15 dispatches=  10 top=[(1048, 'v_add_f32_e32 v0, v0, v2'), (9, 'v_mad_co_u64_u32 v[0:1], null, s4, ttm'), (7, 'v_add_co_u32 v0, vcc_lo, s0, v0')]

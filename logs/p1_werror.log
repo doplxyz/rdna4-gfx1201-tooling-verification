@@ -1,0 +1,5 @@
+### -Werror behaviour of the ignored-sanitizer warning (gfx1201, host clang 23)
+  flags=(none)                       rc=0 | clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch 
+  flags=-Werror                      rc=1 | clang++: error: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch co
+  flags=-Werror=option-ignored       rc=1 | clang++: error: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch co
+  flags=-fdiagnostics-show-option    rc=0 | clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch 

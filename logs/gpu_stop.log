@@ -1,0 +1,13 @@
+=== stop comfy 2026-08-19T00:12:56+09:00
+[comfyctl] PAUSE フラグを設置: /home/dop/workdir/062_comfyui_rocm7140/.comfy_paused
+[comfyctl] comfy-rocm7140 を停止します (SIGINT, grace 60s)...
+comfy-rocm7140
+
+[comfyctl] comfy-rocm7140 | Exited (0) Less than a second ago
+[comfyctl] watchdog は停止せず待機中。戻すときは: comfyctl.bash start
+=== stop llama
+[INFO] llama-server (pid=2243186, port=5100) に SIGINT を送信します
+...終了待ち (2秒経過)
+[INFO] 停止しました (pid=2243186)
+port=5100 state=stopped
+[SUCCESS] 全工程が完了しました。

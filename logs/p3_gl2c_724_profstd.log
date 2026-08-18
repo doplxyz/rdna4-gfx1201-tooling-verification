@@ -1,0 +1,19 @@
+### counters for the read_f4 kernel, 256 MiB contiguous float4 read (analytic: 268,435,456 B)
+  -- group: sanity (wave/instruction level)
+    SQ_INSTS_VALU                         5,242,880
+    SQ_WAVES                                524,288
+  -- group: GL2C EA read, base + size split
+    GL2C_EA_RDREQ_128B_sum                        0
+    GL2C_EA_RDREQ_32B_sum                         0
+    GL2C_EA_RDREQ_64B_sum                         0
+    GL2C_EA_RDREQ_sum                     1,048,578
+  -- group: GL2C request/miss (same block, not EA)
+    GL2C_HIT_sum                          1,055,645
+    GL2C_MISS_sum                         1,051,803
+  -- group: GL2C EA write
+    GL2C_EA_WRREQ_64B_sum                         0
+    GL2C_EA_WRREQ_sum                             0
+  -- group: derived metrics that depend on the size split
+    FETCH_SIZE                                    0
+  -- group: per-instance (no reduce) GL2C_EA_RDREQ
+    GL2C_EA_RDREQ                         1,048,578

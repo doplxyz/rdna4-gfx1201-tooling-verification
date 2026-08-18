@@ -1,0 +1,62 @@
+### Phase1: target-ID acceptance matrix (host amdclang++, ROCm 7.14)
+
+--- offload-arch=gfx1201 (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+--- offload-arch=gfx1201:xnack+ (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: error: invalid target ID 'gfx1201:xnack+'; format is a processor name followed by an optional colon-delimited list of features followed by an enable/disable sign (e.g., 'gfx908:sramecc+:xnack-')
+
+--- offload-arch=gfx1201:xnack- (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: error: invalid target ID 'gfx1201:xnack-'; format is a processor name followed by an optional colon-delimited list of features followed by an enable/disable sign (e.g., 'gfx908:sramecc+:xnack-')
+
+--- offload-arch=gfx942 (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx942' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+--- offload-arch=gfx942:xnack+ (with -fsanitize=address -fgpu-sanitize)
+rc=1
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated when compiling for gfx942.
+
+--- offload-arch=gfx942:xnack- (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx942:xnack-' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+--- offload-arch=gfx90a (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx90a' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+--- offload-arch=gfx90a:xnack+ (with -fsanitize=address -fgpu-sanitize)
+rc=1
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+1 error generated when compiling for gfx90a.
+
+--- offload-arch=gfx1100 (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx1100' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+probes/oob.hip:4:10: fatal error: 'hip/hip_runtime.h' file not found
+    4 | #include <hip/hip_runtime.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+
+--- offload-arch=gfx1100:xnack+ (with -fsanitize=address -fgpu-sanitize)
+rc=1
+clang++: error: invalid target ID 'gfx1100:xnack+'; format is a processor name followed by an optional colon-delimited list of features followed by an enable/disable sign (e.g., 'gfx908:sramecc+:xnack-')

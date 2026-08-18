@@ -1,0 +1,32 @@
+### R2-A  read size sweep (baseline + slope), profile_standard assumed
+rd_null dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=0
+rd_16MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=65538
+rd_32MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=131074
+rd_64MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=262146
+rd_128MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=524290
+rd_256MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=193 GL2C_EA_RDREQ_32B_sum=6 GL2C_EA_RDREQ_64B_sum=6 GL2C_EA_RDREQ_sum=1050439
+rd_512MiB dispatches=1 GL2C_EA_RDREQ_128B_sum=193 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=6 GL2C_EA_RDREQ_sum=2099030
+### R2-B  write size sweep
+wr_16MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=40960
+wr_32MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=106496
+wr_64MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=237568
+wr_128MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=499712
+wr_256MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=1024000
+wr_512MiB dispatches=1 GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=2072576
+### R2-C  every byte-size / traffic metric this rocprofv3 defines, on a 256 MiB read
+bytesize dispatches=1 FETCH_SIZE=0 FetchSize=0
+### R2-D  repeats at fixed size (n=5)
+rep1 dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+rep2 dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+rep3 dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+rep4 dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+rep5 dispatches=1 GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+### R2-E  PC sampling: ONE fixed workload, interval sweep
+  host_trap interval=512 rc=0 samples=129532
+  host_trap interval=1000 rc=0 samples=71160
+  host_trap interval=10000 rc=0 samples=7727
+  host_trap interval=100000 rc=0 samples=731
+  host_trap interval=1000000 rc=0 NO OUTPUT FILE
+  host_trap interval=10000000 rc=0 NO OUTPUT FILE
+### R2-F  stochastic on the same fixed workload
+  stochastic interval=1000 rc=1 msg=Given PC sampling configuration is not supported on any of the agents

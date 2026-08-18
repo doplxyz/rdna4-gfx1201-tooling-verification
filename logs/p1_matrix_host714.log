@@ -1,0 +1,19 @@
+### host ROCm 7.14 / clang 23
+compiler: AMD clang version 23.0.0git (https://github.com/ROCm/llvm-project.git 46fcb339fb61119b337f973c7ca9e710a319fdd0+PATCHED:440716f8b87be9d8e20ed910e10e5b6d14d57cf6)
+offload-arch           rc     diagnostic
+gfx90a                 0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx90a' as it is not currently supported there
+gfx90a:xnack+          0      
+gfx908:xnack+          0      
+gfx942                 0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx942' as it is not currently supported there
+gfx942:xnack+          0      
+gfx950:xnack+          0      
+gfx1010:xnack+         0      
+gfx1030:xnack+         1      error: invalid target ID 'gfx1030:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1100                0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx1100' as it is not currently supported ther
+gfx1100:xnack+         1      error: invalid target ID 'gfx1100:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1101:xnack+         1      error: invalid target ID 'gfx1101:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1200:xnack+         1      error: invalid target ID 'gfx1200:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1201                0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported ther
+gfx1201:xnack+         1      error: invalid target ID 'gfx1201:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1201:xnack-         1      error: invalid target ID 'gfx1201:xnack-'; format is a processor name followed by an optional colon-delimited 
+gfx12-generic:xnack+   1      error: invalid target ID 'gfx12-generic:xnack+'; format is a processor name followed by an optional colon-deli

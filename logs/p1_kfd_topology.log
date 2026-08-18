@@ -1,0 +1,22 @@
+### KFD topology
+--- /sys/class/kfd/kfd/topology/nodes/0/ name=
+simd_count 0
+gfx_target_version 0
+--- /sys/class/kfd/kfd/topology/nodes/1/ name=ip discovery
+simd_count 128
+gfx_target_version 120001
+capability 3896746688
+capability2 0
+num_xcc 1
+### rocminfo xnack-related
+XNACK enabled:           NO
+  Name:                    AMD Ryzen 9 3900X 12-Core Processor
+  Uuid:                    CPU-XX                             
+  Marketing Name:          AMD Ryzen 9 3900X 12-Core Processor
+  Vendor Name:             CPU                                
+  Name:                    gfx1201                            
+  Uuid:                    GPU-ea946c7854bec335               
+  Marketing Name:          AMD Radeon RX 9070 XT              
+  Vendor Name:             AMD                                
+      Name:                    amdgcn-amd-amdhsa--gfx1201         
+      Name:                    amdgcn-amd-amdhsa--gfx12-generic   

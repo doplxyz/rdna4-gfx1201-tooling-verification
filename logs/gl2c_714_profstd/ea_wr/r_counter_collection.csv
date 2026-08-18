@@ -1,0 +1,5 @@
+"Correlation_Id","Dispatch_Id","Agent_Id","Queue_Id","Process_Id","Thread_Id","Grid_Size","Kernel_Id","Kernel_Name","Workgroup_Size","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Counter_Name","Counter_Value","Start_Timestamp","End_Timestamp"
+1,1,"Agent 1",1,40,40,8192,15,"__amd_rocclr_fillBufferAligned",256,0,0,16,0,128,"GL2C_EA_WRREQ_sum",1024001.000000,312228765171727,312228766321790
+1,1,"Agent 1",1,40,40,8192,15,"__amd_rocclr_fillBufferAligned",256,0,0,16,0,128,"GL2C_EA_WRREQ_64B_sum",0.00000000e+00,312228765171727,312228766321790
+2,2,"Agent 1",1,40,40,16777216,22,"read_f4(HIP_vector_type<float, 4u> const*, float*, unsigned long)",256,0,0,8,0,128,"GL2C_EA_WRREQ_sum",0.00000000e+00,312228767509132,312228769075162
+2,2,"Agent 1",1,40,40,16777216,22,"read_f4(HIP_vector_type<float, 4u> const*, float*, unsigned long)",256,0,0,8,0,128,"GL2C_EA_WRREQ_64B_sum",0.00000000e+00,312228767509132,312228769075162

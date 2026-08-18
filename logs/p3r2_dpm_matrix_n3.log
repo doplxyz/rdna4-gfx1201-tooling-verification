@@ -1,0 +1,15 @@
+requested=auto             readback=auto             run1  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=auto             readback=auto             run2  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=auto             readback=auto             run3  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=profile_standard readback=profile_standard run1  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+requested=profile_standard readback=profile_standard run2  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+requested=profile_standard readback=profile_standard run3  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+requested=high             readback=high             run1  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=high             readback=high             run2  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=high             readback=high             run3  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=low              readback=low              run1  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=524288
+requested=low              readback=low              run2  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=528983
+requested=low              readback=low              run3  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=0 SQ_INSTS_VALU=0 SQ_WAVES=528982
+requested=profile_peak     readback=profile_peak     run1  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+requested=profile_peak     readback=profile_peak     run2  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288
+requested=profile_peak     readback=profile_peak     run3  GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_sum=1048578 SQ_INSTS_VALU=5242880 SQ_WAVES=524288

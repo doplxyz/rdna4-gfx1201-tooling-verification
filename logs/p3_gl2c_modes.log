@@ -1,0 +1,12 @@
+mode 0 = 256 MiB contiguous float4 READ  (analytic 268,435,456 B)
+    m0_rd GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=1,048,578
+    m0_wr GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=0
+    m0_dv FETCH_SIZE=0
+mode 1 = 256 MiB contiguous float  READ
+    m1_rd GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=1,048,578
+mode 2 = 32 MiB requested, 32 B stride READ (sparse)
+    m2_rd GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=1,048,578
+mode 3 = 256 MiB contiguous float4 WRITE (analytic 268,435,456 B)
+    m3_wr GL2C_EA_WRREQ_64B_sum=0 GL2C_EA_WRREQ_sum=1,024,000
+    m3_rd GL2C_EA_RDREQ_128B_sum=0 GL2C_EA_RDREQ_32B_sum=0 GL2C_EA_RDREQ_64B_sum=0 GL2C_EA_RDREQ_sum=2
+    m3_dv FETCH_SIZE=0

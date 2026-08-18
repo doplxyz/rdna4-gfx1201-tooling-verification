@@ -1,0 +1,20 @@
+=== rocm724 : /opt/rocm/llvm/bin/amdclang++
+AMD clang version 22.0.0git (https://github.com/RadeonOpenCompute/llvm-project roc-7.2.4 26084 f58b06dce1f9c15707c5f808fd002e18c2accf7e)
+Target: x86_64-unknown-linux-gnu
+--- traffic (gfx1201, no sanitizer)
+rc=0
+--- oob plain (gfx1201, no sanitizer)
+rc=0
+--- oob with -fsanitize=address -fgpu-sanitize (gfx1201)
+clang++: warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported there. Use it with an offload arch containing 'xnack+' instead [-Woption-ignored]
+rc=0
+--- oob with -fsanitize=address -fgpu-sanitize (gfx1201:xnack+)  [expected: reject]
+clang++: error: invalid target ID 'gfx1201:xnack+'; format is a processor name followed by an optional colon-delimited list of features followed by an enable/disable sign (e.g., 'gfx908:sramecc+:xnack-')
+rc=1
+--- CONTROL: oob with ASAN for gfx942:xnack+ (compile only, no such GPU here)
+rc=0
+total 3308
+-rwxr-xr-x 1 root root 3253936 Aug 18 15:11 oob_asan
+-rw-r--r-- 1 root root   71984 Aug 18 15:11 oob_gfx942_xnack.o
+-rwxr-xr-x 1 root root   21560 Aug 18 15:11 oob_plain
+-rwxr-xr-x 1 root root   29104 Aug 18 15:11 traffic

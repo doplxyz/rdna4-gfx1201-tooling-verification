@@ -1,0 +1,8 @@
+gfx942:xnack+ plain : co_bytes=6032 asan_syms=0 isa_lines=334
+gfx942:xnack+ asan : co_bytes=54280 asan_syms=76 isa_lines=8563
+
+gfx1201       plain : co_bytes=5456 asan_syms=0 isa_lines=184
+gfx1201       asan : co_bytes=5456 asan_syms=0 isa_lines=184
+
+=== gfx1201 plain vs asan ISA diff (instructions only):
+gfx1201 ISA IDENTICAL between plain and -fgpu-sanitize builds (0 instructions)

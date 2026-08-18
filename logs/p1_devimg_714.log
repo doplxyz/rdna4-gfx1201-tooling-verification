@@ -1,0 +1,8 @@
+97dfb074ed8de90ddd34fc68cdf47757fcb4f968dd517197541e432f1cfc9b83  /w/logs/devimg/oob_asan.gfx1201.co
+933412e109dbdc48eeb0738563492bf6824c66d228dbeb525dcc5a94e8565c70  /w/logs/devimg/oob_plain.gfx1201.co
+--- byte-identical?
+/w/logs/devimg/oob_plain.gfx1201.co /w/logs/devimg/oob_asan.gfx1201.co differ: char 2489, line 4
+DIFFER
+--- CONTROL: same source, gfx942:xnack+, ASAN vs plain (compile-only)
+  g942_plain: co bytes= asan_syms=0
+  g942_asan: co bytes= asan_syms=0

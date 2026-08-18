@@ -1,0 +1,19 @@
+### container ROCm 7.2.4 / clang 22
+compiler: AMD clang version 22.0.0git (https://github.com/RadeonOpenCompute/llvm-project roc-7.2.4 26084 f58b06dce1f9c15707c5f808fd002e18c2accf7e)
+offload-arch           rc     diagnostic
+gfx90a                 0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx90a' as it is not currently supported there
+gfx90a:xnack+          0      
+gfx908:xnack+          0      
+gfx942                 0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx942' as it is not currently supported there
+gfx942:xnack+          0      
+gfx950:xnack+          0      
+gfx1010:xnack+         0      
+gfx1030:xnack+         1      error: invalid target ID 'gfx1030:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1100                0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx1100' as it is not currently supported ther
+gfx1100:xnack+         1      error: invalid target ID 'gfx1100:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1101:xnack+         1      error: invalid target ID 'gfx1101:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1200:xnack+         1      error: invalid target ID 'gfx1200:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1201                0      warning: ignoring '-fsanitize=address' option for offload arch 'gfx1201' as it is not currently supported ther
+gfx1201:xnack+         1      error: invalid target ID 'gfx1201:xnack+'; format is a processor name followed by an optional colon-delimited 
+gfx1201:xnack-         1      error: invalid target ID 'gfx1201:xnack-'; format is a processor name followed by an optional colon-delimited 
+gfx12-generic:xnack+   1      error: invalid target ID 'gfx12-generic:xnack+'; format is a processor name followed by an optional colon-deli

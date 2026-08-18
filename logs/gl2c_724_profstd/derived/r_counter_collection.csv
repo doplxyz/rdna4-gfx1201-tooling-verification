@@ -1,0 +1,3 @@
+"Correlation_Id","Dispatch_Id","Agent_Id","Queue_Id","Process_Id","Thread_Id","Grid_Size","Kernel_Id","Kernel_Name","Workgroup_Size","LDS_Block_Size","Scratch_Size","VGPR_Count","Accum_VGPR_Count","SGPR_Count","Counter_Name","Counter_Value","Start_Timestamp","End_Timestamp"
+1,1,"Agent 1",1,45,45,8192,4,"__amd_rocclr_fillBufferAligned",256,0,0,16,0,128,"FETCH_SIZE",0.00000000e+00,311667329378697,311667329778781
+2,2,"Agent 1",1,45,45,16777216,19,"read_f4(HIP_vector_type<float, 4u> const*, float*, unsigned long)",256,0,0,8,0,128,"FETCH_SIZE",0.00000000e+00,311667330729189,311667331337194

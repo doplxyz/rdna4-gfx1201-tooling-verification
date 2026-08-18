@@ -1,0 +1,4 @@
+n_diff= 39 min= 2488 max= 4417
+.text range = [2816, 3584)
+any diff inside .text: False
+a[.text] == b[.text]: True

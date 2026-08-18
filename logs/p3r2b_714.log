@@ -1,0 +1,14 @@
+### split-counter noise characterisation: 8 runs, 256 MiB read, identical command
+  noise1 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise2 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise3 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise4 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise5 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise6 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise7 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+  noise8 disp=1 R_128B_sum=0 R_32B_sum=0 R_64B_sum=0 R_sum=1048578
+### read sweep (this toolchain)
+  sw_null disp=1 R_128B_sum=0 R_sum=0
+  sw_16 disp=1 R_128B_sum=0 R_sum=65538
+  sw_64 disp=1 R_128B_sum=0 R_sum=262146
+  sw_256 disp=1 R_128B_sum=0 R_sum=1048578

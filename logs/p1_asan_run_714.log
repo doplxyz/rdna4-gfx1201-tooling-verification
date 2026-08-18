@@ -1,0 +1,29 @@
+=== ASAN behaviour on gfx1201 (rocm714), ASAN_OPTIONS=detect_leaks=0
+
+--- mode 0: device stack OOB (write past 2-elem array; CK#3759 bug-1 shape)
+  [plain] rc=0
+      mode=0 hipDeviceSynchronize=0 (no error)
+      out[0]=-1263225675 out[1]=-1263225673
+  [asan] rc=0
+      mode=0 hipDeviceSynchronize=0 (no error)
+      out[0]=-1263225675 out[1]=-1263225673
+  [asan+HSA_XNACK=1] rc=0
+      mode=0 hipDeviceSynchronize=0 (no error)
+      out[0]=-1263225675 out[1]=-1263225673
+
+--- mode 1: device heap OOB (write 4 B past a hipMalloc'd buffer)
+  [plain] rc=0
+      mode=1 hipDeviceSynchronize=0 (no error)
+      out[0]=0 out[1]=1
+  [asan] rc=0
+      mode=1 hipDeviceSynchronize=0 (no error)
+      out[0]=0 out[1]=1
+  [asan+HSA_XNACK=1] rc=0
+      mode=1 hipDeviceSynchronize=0 (no error)
+      out[0]=0 out[1]=1
+
+=== is the gfx1201 device image actually instrumented?
+  oob_plain: (could not unbundle from the executable; using the fat binary instead)
+  oob_plain: __asan_report strings in whole binary = 0
+  oob_asan: (could not unbundle from the executable; using the fat binary instead)
+  oob_asan: __asan_report strings in whole binary = 0
